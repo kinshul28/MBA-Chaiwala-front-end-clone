@@ -1,0 +1,98 @@
+@import 'colors';
+
+footer{
+    height: 100vh;
+    width: 100%;
+    // margin: auto;
+    background-color: $yellow;
+    padding: 100px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    color: $pink;
+    position: fixed;
+    // position: absolute;
+    bottom: 0%;
+    // top: 0%;
+    // width: 100%;
+    z-index: -1;
+
+    >h1{
+        font: 800 4rem $text;
+        font-style: italic;
+        // align-self: center;
+        display: flex;
+        align-items: center;
+    }
+
+    aside{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        // align-self: center ;
+        justify-content: center;
+        
+        >a {
+            text-decoration: none;
+            color: $pink;
+            text-transform: uppercase;
+            font: 500 15px $text;
+            letter-spacing: 3.4px;
+            margin: 1px;
+        }
+
+    }
+        
+    
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // width: 80%;
+        align-items: center;
+        // margin: 0 auto;
+
+        h3{
+            width: 80%;
+            font-family: $text;
+            font-weight: 600;
+            // margin: auto;
+        }
+        a{
+            text-decoration: none;
+            color: $pink;
+            font: 400 1rem $text;
+            width: 80%;
+            // margin: auto;
+
+        }
+        &:last-of-type{
+            align-items: flex-end;
+            >h3{
+                position: relative;
+                left: 55px;
+            }
+        }
+    }
+    
+    p{
+        // position: fixed;
+        position: absolute;  
+        bottom: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        font: 500 12px $text;
+        color: $pink;
+        letter-spacing: 3px;
+        line-height: 1.4;
+        text-transform: uppercase;
+    }
+}
+
+.footer{
+    height: 100vh;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    z-index: -2;
+}
